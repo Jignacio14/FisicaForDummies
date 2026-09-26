@@ -1,0 +1,21 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{Resumen}{3}{section*.1}%
+\contentsline {section}{Introducción}{3}{section*.2}%
+\contentsline {section}{Objetivo}{4}{section*.3}%
+\contentsline {section}{Fundamentos teóricos}{4}{section*.4}%
+\contentsline {subsection}{Clasificación de Incertezas}{4}{subsection*.5}%
+\contentsline {subsection}{Densidad de un cuerpo}{5}{subsection*.6}%
+\contentsline {subsection}{Péndulo ideal}{5}{subsection*.7}%
+\contentsline {subsection}{Regresión lineal}{6}{subsection*.8}%
+\contentsline {section}{Procedimiento}{7}{section*.9}%
+\contentsline {section}{Instrumentos utilizados}{7}{section*.10}%
+\contentsline {subsection}{Regla milimetrada}{7}{subsection*.11}%
+\contentsline {subsection}{Probeta}{7}{subsection*.12}%
+\contentsline {subsection}{Balanza electrónica}{7}{subsection*.13}%
+\contentsline {subsection}{Cronómetro}{7}{subsection*.14}%
+\contentsline {subsection}{Comparación de los errores}{8}{subsection*.15}%
+\contentsline {section}{Datos experimentales y fórmulas utilizadas}{9}{section*.16}%
+\contentsline {subsection}{Parte 1: densidad del cuerpo}{9}{subsection*.17}%
+\contentsline {subsection}{Parte 2: aceleración de la gravedad por método directo}{10}{subsection*.19}%
+\contentsline {subsection}{Parte 2: aceleración de la gravedad por regresión lineal}{11}{subsection*.21}%
+\contentsline {section}{Conclusiones}{12}{section*.23}%
