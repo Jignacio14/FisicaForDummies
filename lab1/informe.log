@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.8)  26 SEP 2026 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.8)  26 SEP 2026 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1075,318 +1075,330 @@ dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc} <
 ./img/logo-fiuba.jpg>]
 File: img/logo-fiuba.jpg Graphic file (type jpg)
 <use img/logo-fiuba.jpg>
-Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 190.
+Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 185.
 (pdftex.def)             Requested size: 62.27734pt x 22.76228pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.190 
-       [1{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-rm.enc}]
+l.185 \]
+         [1{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-rm.enc}]
 File: img/logo-fiuba.jpg Graphic file (type jpg)
 <use img/logo-fiuba.jpg>
-Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 298.
+Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 294.
 (pdftex.def)             Requested size: 62.27734pt x 22.76228pt.
  [2]
 File: img/logo-fiuba.jpg Graphic file (type jpg)
 <use img/logo-fiuba.jpg>
-Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 354.
+Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 325.
 (pdftex.def)             Requested size: 62.27734pt x 22.76228pt.
  [3]
 File: img/logo-fiuba.jpg Graphic file (type jpg)
 <use img/logo-fiuba.jpg>
-Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 421.
+Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 433.
 (pdftex.def)             Requested size: 62.27734pt x 22.76228pt.
- [4]
-<img/fig1-densidad.png, id=183, 1284.8pt x 481.8pt>
+
+[4]
+File: img/logo-fiuba.jpg Graphic file (type jpg)
+<use img/logo-fiuba.jpg>
+Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 494.
+(pdftex.def)             Requested size: 62.27734pt x 22.76228pt.
+ [5]
+<img/fig1-densidad.png, id=191, 462.528pt x 173.448pt>
 File: img/fig1-densidad.png Graphic file (type png)
 <use img/fig1-densidad.png>
-Package pdftex.def Info: img/fig1-densidad.png  used on input line 480.
-(pdftex.def)             Requested size: 358.50534pt x 134.43991pt.
-<img/fig2-gravedad.png, id=184, 1284.8pt x 722.7pt>
+Package pdftex.def Info: img/fig1-densidad.png  used on input line 503.
+(pdftex.def)             Requested size: 358.50534pt x 134.44727pt.
+<img/fig2-gravedad.png, id=193, 462.528pt x 260.172pt>
 File: img/fig2-gravedad.png Graphic file (type png)
 <use img/fig2-gravedad.png>
-Package pdftex.def Info: img/fig2-gravedad.png  used on input line 488.
-(pdftex.def)             Requested size: 358.50534pt x 201.65988pt.
-<img/fig3-regresion.png, id=185, 1284.8pt x 843.15pt>
+Package pdftex.def Info: img/fig2-gravedad.png  used on input line 511.
+(pdftex.def)             Requested size: 358.50534pt x 201.6709pt.
+<img/fig3-regresion.png, id=194, 462.528pt x 295.94565pt>
 File: img/fig3-regresion.png Graphic file (type png)
 <use img/fig3-regresion.png>
-Package pdftex.def Info: img/fig3-regresion.png  used on input line 496.
-(pdftex.def)             Requested size: 358.50534pt x 235.26987pt.
+Package pdftex.def Info: img/fig3-regresion.png  used on input line 519.
+(pdftex.def)             Requested size: 358.50534pt x 229.40065pt.
 
-Overfull \hbox (6.85786pt too wide) in paragraph at lines 506--512
+Overfull \hbox (6.85786pt too wide) in paragraph at lines 529--535
 [] []\T1/qhv/b/n/12 (-20) Den-si-dad.[] \T1/qhv/m/n/12 (-20) El in-ter-va-lo ob
--te-ni-do, $\LMS/ntxsy/m/n/12 ª\U/ntxsfmia/m/it/12 É\OML/ntxsfmi/m/it/12 ;\U/nt
-xsfmia/m/it/12 Å \OT1/qhv/m/n/12 (-20) ;  \U/ntxsfmia/m/it/12 Ñ\OML/ntxsfmi/m/i
-t/12 ;\U/ntxsfmia/m/it/12 Ö\LMS/ntxsy/m/n/12 º []$\T1/qhv/m/n/12 (-20) , con-ti
+-te-ni-do, $\LMS/ntxsy/m/n/12 ª\U/ntxsfmia/m/it/12 Ç\OML/ntxsfmi/m/it/12 ;\U/nt
+xsfmia/m/it/12 ä \OT1/qhv/m/n/12 (-20) ;  \U/ntxsfmia/m/it/12 Ñ\OML/ntxsfmi/m/i
+t/12 ;\U/ntxsfmia/m/it/12 Ü\LMS/ntxsy/m/n/12 º []$\T1/qhv/m/n/12 (-20) , con-ti
 e-ne la den-si-dad del alu-mi-nio ($\U/ntxsfmia/m/it/12 É\OML/ntxsfmi/m/it/12 ;
 \U/ntxsfmia/m/it/12 àÅ []$\T1/qhv/m/n/12 (-20) ),
  []
 
 File: img/logo-fiuba.jpg Graphic file (type jpg)
 <use img/logo-fiuba.jpg>
-Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 512.
+Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 536.
 (pdftex.def)             Requested size: 62.27734pt x 22.76228pt.
-[5]
+[6 <./img/fig1-densidad.png> <./img/fig2-gravedad.png>]
 File: img/logo-fiuba.jpg Graphic file (type jpg)
 <use img/logo-fiuba.jpg>
-Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 512.
+Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 585.
 (pdftex.def)             Requested size: 62.27734pt x 22.76228pt.
- [6 <./img/fig1-densidad.png (PNG copy)> <./img/fig2-gravedad.png (PNG copy)> <
-./img/fig3-regresion.png (PNG copy)>]
+ [7 <./img/fig3-regresion.png>]
 File: img/logo-fiuba.jpg Graphic file (type jpg)
 <use img/logo-fiuba.jpg>
-Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 577.
-(pdftex.def)             Requested size: 62.27734pt x 22.76228pt.
- [7]
-File: img/logo-fiuba.jpg Graphic file (type jpg)
-<use img/logo-fiuba.jpg>
-Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 659.
+Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 664.
 (pdftex.def)             Requested size: 62.27734pt x 22.76228pt.
  [8]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 742.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 742.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@nomath' on input line 742.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 742.
+File: img/logo-fiuba.jpg Graphic file (type jpg)
+<use img/logo-fiuba.jpg>
+Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 735.
+(pdftex.def)             Requested size: 62.27734pt x 22.76228pt.
+ [9]
+Overfull \hbox (13.86467pt too wide) detected at line 750
+\U/ntxsfmia/m/it/12 ^^A\OML/ntxsfmi/m/it/12 t[] \U/ntxsfmia/m/it/12 = Å\OML/ntx
+sfmi/m/it/12 ;\U/ntxsfmia/m/it/12 ÅÇ \OT1/qhv/m/n/12 s \LMS/ntxsy/m/n/12 œ \U/n
+txsfmia/m/it/12 Å\OML/ntxsfmi/m/it/12 ;\U/ntxsfmia/m/it/12 É \OT1/qhv/m/n/12 s 
+\U/ntxsfmia/m/it/12 = Å\OML/ntxsfmi/m/it/12 ;\U/ntxsfmia/m/it/12 ÉÇ \OT1/qhv/m/
+n/12 s\OML/ntxsfmi/m/it/12 ;  \U/ntxsfmia/m/it/12 ^^A\OML/ntxsfmi/m/it/12 t[] \
+U/ntxsfmia/m/it/12 = []\OML/ntxsfmi/m/it/12 ;  \U/ntxsfmia/m/it/12 ^^A\OML/ntxs
+fmi/m/it/12 t \U/ntxsfmia/m/it/12 = []\LMS/ntxsy/m/n/12 π\U/ntxsfmia/m/it/12 ^^
+A\OML/ntxsfmi/m/it/12 t[]; \U/ntxsfmia/m/it/12 ^^A\OML/ntxsfmi/m/it/12 t[]\LMS/
+ntxsy/m/n/12 ∫
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 742.
+(hyperref)                removing `math shift' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 742.
+(hyperref)                removing `\begingroup' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 742.
+(hyperref)                removing `\<let>-command' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\thinmuskip' on input line 742.
+(hyperref)                removing `\@nomath' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\medmuskip' on input line 742.
+(hyperref)                removing `\begingroup' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\m@ne' on input line 742.
+(hyperref)                removing `\setbox' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\thickmuskip' on input line 742.
+(hyperref)                removing `\z@' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ne' on input line 742.
+(hyperref)                removing `\hbox' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 742.
+(hyperref)                removing `\thinmuskip' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\tw@' on input line 742.
+(hyperref)                removing `\medmuskip' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 742.
+(hyperref)                removing `\m@ne' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `\thickmuskip' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\pi' on input line 742.
+(hyperref)                removing `\@ne' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 742.
+(hyperref)                removing `\setbox' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 742.
+(hyperref)                removing `\tw@' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `\hbox' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `math shift' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\pi' on input line 742.
+(hyperref)                removing `\pi' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 742.
+(hyperref)                removing `\mathsurround' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 742.
+(hyperref)                removing `\z@' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `math shift' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 742.
+(hyperref)                removing `math shift' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathchoice' on input line 742.
+(hyperref)                removing `\pi' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 742.
+(hyperref)                removing `\mathsurround' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `\z@' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 742.
+(hyperref)                removing `math shift' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 742.
+(hyperref)                removing `\<def>-command' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\displaystyle' on input line 742.
+(hyperref)                removing `\mathchoice' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\pi' on input line 742.
+(hyperref)                removing `\hbox' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `math shift' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 742.
+(hyperref)                removing `\mathsurround' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `\z@' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 742.
+(hyperref)                removing `\displaystyle' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 742.
+(hyperref)                removing `\pi' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textstyle' on input line 742.
+(hyperref)                removing `math shift' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\pi' on input line 742.
+(hyperref)                removing `\hbox' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `math shift' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 742.
+(hyperref)                removing `\mathsurround' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `\z@' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 742.
+(hyperref)                removing `\textstyle' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 742.
+(hyperref)                removing `\pi' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\scriptstyle' on input line 742.
+(hyperref)                removing `math shift' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\pi' on input line 742.
+(hyperref)                removing `\hbox' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `math shift' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 742.
+(hyperref)                removing `\mathsurround' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `\z@' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 742.
+(hyperref)                removing `\scriptstyle' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 742.
+(hyperref)                removing `\pi' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\scriptscriptstyle' on input line 742.
+(hyperref)                removing `math shift' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\pi' on input line 742.
+(hyperref)                removing `\hbox' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `math shift' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 742.
+(hyperref)                removing `\mathsurround' on input line 792.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 742.
+(hyperref)                removing `\z@' on input line 792.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\scriptscriptstyle' on input line 792.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\pi' on input line 792.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 792.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endgroup' on input line 792.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 792.
 
 File: img/logo-fiuba.jpg Graphic file (type jpg)
 <use img/logo-fiuba.jpg>
-Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 747.
+Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 807.
 (pdftex.def)             Requested size: 62.27734pt x 22.76228pt.
-[9]
-File: img/logo-fiuba.jpg Graphic file (type jpg)
-<use img/logo-fiuba.jpg>
-Package pdftex.def Info: img/logo-fiuba.jpg  used on input line 752.
-(pdftex.def)             Requested size: 62.27734pt x 22.76228pt.
- [10] 
+[10] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./informe.aux
 LaTeX Info: Redefining \. on input line 7.
@@ -1400,11 +1412,11 @@ Package rerunfilecheck Info: File `informe.out' has not changed.
 (rerunfilecheck)             Checksum: 61DF4D4A960E44713046BF04FE195E5A;5324.
  ) 
 Here is how much of TeX's memory you used:
- 29234 strings out of 476047
- 525604 string characters out of 5792075
- 1953975 words of memory out of 5000000
- 50437 multiletter control sequences out of 15000+600000
- 727581 words of font info for 356 fonts, out of 8000000 for 9000
+ 29243 strings out of 476047
+ 525692 string characters out of 5792075
+ 1952975 words of memory out of 5000000
+ 50438 multiletter control sequences out of 15000+600000
+ 727981 words of font info for 360 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  84i,17n,117p,1004b,971s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/font
@@ -1418,10 +1430,10 @@ mf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts
 f/zsfmi-reg.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtxsf/zsfmi
 a-bol.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtxsf/zsfmia-reg.
 pfb>
-Output written on informe.pdf (11 pages, 347679 bytes).
+Output written on informe.pdf (11 pages, 334427 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
+ 308 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
  58 named destinations out of 1000 (max. 500000)
  73995 words of extra memory for PDF output out of 74296 (max. 10000000)
 

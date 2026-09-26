@@ -140,11 +140,12 @@
 Se determinó la densidad de un sólido midiendo su masa con una balanza electrónica y su
 volumen por desplazamiento de agua en una probeta, y la aceleración de la gravedad con un
 péndulo ideal, midiendo el tiempo de 10 oscilaciones para seis longitudes de hilo. Propagando
-las incertezas se obtuvo $\delta = (2{,}7 \pm 0{,}7)\ \mathrm{g/cm^3}$ (25\%), compatible con
+las incertezas se obtuvo $\delta = (2{,}7 \pm 0{,}8)\ \mathrm{g/cm^3}$ (30\%), compatible con
 el aluminio y no con el latón ni con el bronce. Para la gravedad se obtuvo
-$g = (9{,}59 \pm 0{,}21)\ \mathrm{m/s^2}$ (2,2\%) por el método directo y
+$g = (9{,}59 \pm 0{,}26)\ \mathrm{m/s^2}$ (2,7\%) por el método directo y
 $g = (9{,}56 \pm 0{,}17)\ \mathrm{m/s^2}$ (1,7\%) por regresión lineal de $T^2$ en función
-de $L$, único método que cumple la cota del 2\% requerida.
+de $L$. Solo la regresión cumple la cota del 2\% requerida, y con reservas, ya que el ajuste
+final cuenta con apenas cuatro puntos.
 
 % ------------------------------------------------------------------
 \section{Introducción teórica}
@@ -166,7 +167,9 @@ error absoluto se obtiene como
   \Delta X = \frac{(X_M + \mathrm{min}) - (X_m - \mathrm{min})}{2}
 \]
 donde min es la mínima división del instrumento, $X_M$ el valor máximo medido y $X_m$ el
-mínimo. El error relativo $\varepsilon = \Delta X / X_0$ (multiplicado por 100, el error
+mínimo. Si existe una fuente de incerteza no estadística mayor que este valor (por ejemplo,
+el tiempo de reacción al usar un cronómetro manual), se adopta la mayor de las dos.
+El error relativo $\varepsilon = \Delta X / X_0$ (multiplicado por 100, el error
 porcentual) indica la calidad de la medición, y el resultado se redondea de modo coherente con
 su incerteza. El redondeo de números irracionales como $\pi$ también aporta un error, que se
 considera despreciable cuando es a lo sumo la décima parte del menor error relativo de las
@@ -305,20 +308,24 @@ $\Delta L = 0{,}1$~cm como incerteza instrumental.
 entre el nivel con el cuerpo sumergido y el nivel inicial. Su apreciación es de 2~ml, y como
 el volumen surge de la diferencia de dos lecturas ($V = X_2 - X_1$), la incerteza
 instrumental del volumen es $\Delta V_{\text{inst}} = \Delta X_1 + \Delta X_2 = 4$~ml.
+Aplicando la expresión para mediciones repetidas a las cuatro tomas, con esa apreciación,
+resulta $\Delta V = 5$~ml.
 
-\paragraph{Masa.} Se midió con la balanza electrónica, cuya resolución de 0,01~g se adoptó
-como incerteza $\Delta m$. Las cuatro mediciones dieron 45,70~g y 45,71~g, es decir, una
-dispersión menor que la apreciación del instrumento, por lo que se tomó la incerteza
-instrumental.
+\paragraph{Masa.} Se midió con la balanza electrónica, de resolución 0,01~g. Las cuatro
+mediciones dieron 45,70~g y 45,71~g; aplicando la expresión para mediciones repetidas se
+obtiene $\Delta m = [(45{,}71 + 0{,}01) - (45{,}70 - 0{,}01)]/2 = 0{,}015$~g.
 
 \paragraph{Tiempo.} Se midió con un cronómetro digital de mano el tiempo de 10 oscilaciones
-completas. Su resolución es de 0,01~s, pero la incerteza está dominada por el tiempo de
-reacción humano al iniciar y detener el cronómetro, estimado en 0,2~s (valor sugerido en la
-guía de la práctica). Se adoptó entonces $\Delta t \approx 0{,}21$~s para el tiempo de 10
-oscilaciones y $\Delta T \approx 0{,}021$~s para el período.
+completas. Su resolución es de 0,01~s, pero la incerteza instrumental está dominada por el
+tiempo de reacción humano al iniciar y detener el cronómetro, estimado en 0,2~s (valor
+sugerido en la guía de la práctica), de modo que $\Delta t_{\text{inst}} = 0{,}21$~s. Para
+cada longitud se comparó este valor con el que surge de la dispersión de las tres
+repeticiones y se adoptó el mayor (ver Tabla~\ref{tab:pendulo}); el período tiene
+$\Delta T = \Delta t / 10$.
 
 % ------------------------------------------------------------------
 \section{Resultados de las mediciones}
+\label{sec:resultados}
 Los cálculos y la propagación de incertezas se detallan en la Sección~\ref{sec:apendices} (Apéndices), ítem~\ref{ap:calculos}.
 
 \subsection{Tablas}
@@ -341,14 +348,15 @@ Los cálculos y la propagación de incertezas se detallan en la Sección~\ref{se
   2 & 40 & 2 & 56 & 2 & 16 & 4 \\
   3 & 40 & 2 & 57 & 2 & 17 & 4 \\
   4 & 29 & 2 & 45 & 2 & 16 & 4 \\ \midrule
-  \textbf{Promedio} & & & & & \textbf{16,75} & \textbf{4,1}$^{*}$ \\
+  \textbf{Promedio} & & & & & \textbf{16,75} & \textbf{5}$^{*}$ \\
   \bottomrule
 \end{tabular}
 
 \smallskip
 \begin{minipage}{0.8\textwidth}\footnotesize
 $X_1$ = nivel inicial del agua; $X_2$ = nivel con el cuerpo sumergido; $V$ = volumen del
-cuerpo. $^{*}$Incluye la dispersión estadística de las cuatro tomas.
+cuerpo. $^{*}$Incerteza de $V$ obtenida con la expresión para mediciones repetidas
+(incluye la dispersión de las cuatro tomas).
 \end{minipage}
 \end{table}
 
@@ -364,21 +372,22 @@ cuerpo. $^{*}$Incluye la dispersión estadística de las cuatro tomas.
   2 & 45,70 & 0,01 \\
   3 & 45,71 & 0,01 \\
   4 & 45,71 & 0,01 \\ \midrule
-  \textbf{Promedio} & \textbf{45,705} & \textbf{0,01} \\
+  \textbf{Promedio} & \textbf{45,705} & \textbf{0,015}$^{*}$ \\
   \bottomrule
 \end{tabular}
 
 \smallskip
-{\footnotesize $m$ = masa del cuerpo.}
+{\footnotesize $m$ = masa del cuerpo. $^{*}$Obtenida con la expresión para mediciones
+repetidas.}
 \end{table}
 
 A partir de las Tablas~\ref{tab:volumen} y~\ref{tab:masa} se obtienen el volumen, la masa y,
 en forma indirecta, la densidad del cuerpo:
 \begin{center}
-  $\boldsymbol{V = (17 \pm 4)\ \mathbf{cm^3}}$ \qquad
-  $\boldsymbol{m = (45{,}71 \pm 0{,}01)\ \mathbf{g}}$ \qquad
-  $\boldsymbol{\delta = (2{,}7 \pm 0{,}7)\ \mathbf{g/cm^3}}$
-  \quad ($\varepsilon_\delta \approx 25\%$)
+  $\boldsymbol{V = (17 \pm 5)\ \mathbf{cm^3}}$ \qquad
+  $\boldsymbol{m = (45{,}71 \pm 0{,}02)\ \mathbf{g}}$ \qquad
+  $\boldsymbol{\delta = (2{,}7 \pm 0{,}8)\ \mathbf{g/cm^3}}$
+  \quad ($\varepsilon_\delta \approx 30\%$)
 \end{center}
 
 \subsubsection*{Parte 2: aceleración de la gravedad por método directo}
@@ -388,52 +397,58 @@ para cada una, se presentan en la Tabla~\ref{tab:pendulo}.
 \begin{table}[H]
 \centering
 \small
-\setlength{\tabcolsep}{4.5pt}
+\setlength{\tabcolsep}{3.2pt}
 \caption{Tiempos de $N = 10$ oscilaciones para cada longitud, período y valor de $g$
          calculado para cada una.}
 \label{tab:pendulo}
-\begin{tabular}{ccccccccccc}
+\begin{tabular}{cccccccccccc}
   \toprule
-  \multicolumn{4}{c}{\hdr{Mediciones directas}} & \multicolumn{7}{c}{\hdr{Mediciones indirectas}} \\
-  \cmidrule(lr){1-4}\cmidrule(lr){5-11}
+  \multicolumn{4}{c}{\hdr{Mediciones directas}} & \multicolumn{8}{c}{\hdr{Mediciones indirectas}} \\
+  \cmidrule(lr){1-4}\cmidrule(lr){5-12}
   \hdr{$L$} & \hdr{$t_1$} & \hdr{$t_2$} & \hdr{$t_3$} & \hdr{$t_{\text{prom}}$} &
+  \hdr{$\pm\Delta t$} &
   \hdr{$T$} & \hdr{$T^2$} & \hdr{$\pm\Delta T^2$} & \hdr{$g$} & \hdr{$\pm\Delta g$} &
   \hdr{$\varepsilon_g$} \\
-  {[cm]} & {[s]} & {[s]} & {[s]} & {[s]} & {[s]} & {[s$^2$]} & {[s$^2$]} & {[m/s$^2$]} &
+  {[cm]} & {[s]} & {[s]} & {[s]} & {[s]} & {[s]} & {[s]} & {[s$^2$]} & {[s$^2$]} & {[m/s$^2$]} &
   {[m/s$^2$]} & {[\%]} \\ \midrule
-  96,5 & 20,10 & 19,60 & 20,10 & 19,93 & 1,993 & 3,973 & 0,08 & 9,59  & 0,21 & 2,2 \\
-  88   & 19,77 & 18,91 & 18,72 & 19,13 & 1,913 & 3,661 & 0,08 & 9,49  & 0,22 & 2,3 \\
-  78   & 18,20 & 17,96 & 17,79 & 17,98 & 1,798 & 3,234 & 0,08 & 9,52  & 0,23 & 2,5 \\
-  58,5 & 15,71 & 15,43 & 15,48 & 15,54 & 1,554 & 2,415 & 0,07 & 9,56  & 0,27 & 2,9 \\
-  43   & 13,92 & 14,12 & 14,18 & 14,07 & 1,407 & 1,981 & 0,06 & 8,57  & 0,28 & 3,2 \\
-  87   & 18,21 & 18,50 & 18,45 & 18,39 & 1,839 & 3,381 & 0,08 & 10,16 & 0,24 & 2,4 \\
+  96,5 & 20,10 & 19,60 & 20,10 & 19,93 & 0,26\rlap{$^{*}$}  & 1,993 & 3,973 & 0,10 & 9,59  & 0,26 & 2,7 \\
+  88   & 19,77 & 18,91 & 18,72 & 19,13 & 0,54\rlap{$^{*}$}  & 1,913 & 3,661 & 0,20 & 9,5   & 0,5  & 5,7 \\
+  78   & 18,20 & 17,96 & 17,79 & 17,98 & 0,22\rlap{$^{*}$}  & 1,798 & 3,234 & 0,08 & 9,52  & 0,24 & 2,5 \\
+  58,5 & 15,71 & 15,43 & 15,48 & 15,54 & 0,21 & 1,554 & 2,415 & 0,07 & 9,56  & 0,27 & 2,9 \\
+  43   & 13,92 & 14,12 & 14,18 & 14,07 & 0,21 & 1,407 & 1,981 & 0,06 & 8,57  & 0,28 & 3,2 \\
+  87   & 18,21 & 18,50 & 18,45 & 18,39 & 0,21 & 1,839 & 3,381 & 0,08 & 10,16 & 0,24 & 2,4 \\
   \bottomrule
 \end{tabular}
 
 \smallskip
 \begin{minipage}{0.92\textwidth}\footnotesize
 $L$ = longitud del péndulo ($\Delta L = 0{,}1$~cm); $t_1, t_2, t_3$ = tiempos de 10
-oscilaciones y $t_{\text{prom}}$ = su promedio ($\Delta t = 0{,}21$~s);
-$T = t_{\text{prom}}/10$ = período ($\Delta T = 0{,}021$~s); $g$ = aceleración de la
-gravedad; $\varepsilon_g$ = error relativo porcentual de $g$.
+oscilaciones y $t_{\text{prom}}$ = su promedio; $\Delta t$ = mayor entre la incerteza
+instrumental (0,21~s) y la obtenida de la dispersión de las tres repeticiones
+($^{*}$: domina la dispersión); $T = t_{\text{prom}}/10$ = período
+($\Delta T = \Delta t/10$); $g$ = aceleración de la gravedad; $\varepsilon_g$ = error relativo
+porcentual de $g$.
 \end{minipage}
 \end{table}
 
 Para la longitud más larga, $L = 96{,}5$~cm, se obtiene:
 \begin{center}
-  $\boldsymbol{g = (9{,}59 \pm 0{,}21)\ \mathbf{m/s^2}}$
-  \qquad $\varepsilon_g = 2{,}2\%$
+  $\boldsymbol{g = (9{,}59 \pm 0{,}26)\ \mathbf{m/s^2}}$
+  \qquad $\varepsilon_g = 2{,}7\%$
 \end{center}
 La incerteza se expresa con dos cifras significativas porque la primera es un 2, caso en el
 que redondear a una sola cifra implicaría perder información. Todas las longitudes dan
-errores relativos de entre 2,2\% y 3,2\%, levemente por encima de la cota del 2\%.
+errores relativos de entre 2,4\% y 5,7\%, por encima de la cota del 2\%. El mayor
+corresponde a $L = 88$~cm, cuyas tres repeticiones difieren hasta en 1~s.
 
 Los valores obtenidos con $L = 43$~cm ($8{,}57\ \mathrm{m/s^2}$) y $L = 87$~cm
 ($10{,}16\ \mathrm{m/s^2}$) se alejan notoriamente del resto (ver Figura~\ref{fig:gravedad}). En
 particular, las longitudes de 87~cm y 88~cm difieren en solo 1~cm y deberían dar períodos
 casi iguales (diferencia esperada $\approx 0{,}01$~s), pero sus períodos medidos difieren en
-0,075~s. Esto indica un error grosero en alguna de esas mediciones, por lo que esos dos puntos
-se consideraron aparte en la regresión.
+0,075~s. Esto indica un error grosero en alguna de las dos. Se atribuyó al punto de 87~cm
+porque su valor de $g$ es incompatible con el de las demás longitudes, mientras que el de
+88~cm concuerda con ellas; la gran dispersión de sus tiempos ya queda reflejada en su mayor
+incerteza. Por eso, los puntos de 43~cm y 87~cm se consideraron aparte en la regresión.
 
 \subsubsection*{Parte 2: aceleración de la gravedad por regresión lineal}
 A partir de los datos de la Tabla~\ref{tab:pendulo} se ajustó una recta
@@ -468,6 +483,14 @@ Descartando los dos puntos anómalos se obtiene:
   $\boldsymbol{g = (9{,}56 \pm 0{,}17)\ \mathbf{m/s^2}}$
   \qquad $\varepsilon_g = 1{,}7\%$
 \end{center}
+Esta incerteza surge de la dispersión de solo cuatro puntos alrededor de la recta (dos
+grados de libertad), por lo que es una estimación optimista. Los puntos quedan muy por
+dentro de sus propias barras de error (Figura~\ref{fig:regresion}): si en cambio se
+propagan las incertezas de $T^2$ al ajuste, se obtiene $\Delta a \approx 0{,}3\ \mathrm{s^2/m}$
+y $\Delta g \approx 0{,}7\ \mathrm{m/s^2}$. Que la dispersión real sea mucho menor que la
+esperada sugiere que parte del tiempo de reacción es sistemático (un retraso similar al
+iniciar y al detener el cronómetro, que se compensa) y afecta por igual a todas las
+longitudes.
 
 \subsection{Gráficas}
 En la Figura~\ref{fig:densidad} se compara el intervalo de densidad obtenido con valores
@@ -503,7 +526,7 @@ con los dos ajustes lineales de la Tabla~\ref{tab:ajustes}.
 \section{Análisis de resultados y conclusiones}
 
 \subsection{Comparación entre el modelo y el sistema}
-\paragraph{Densidad.} El intervalo obtenido, $[2{,}0\,;\,3{,}4]\ \mathrm{g/cm^3}$, contiene
+\paragraph{Densidad.} El intervalo obtenido, $[1{,}9\,;\,3{,}5]\ \mathrm{g/cm^3}$, contiene
 la densidad del aluminio ($2{,}70\ \mathrm{g/cm^3}$), por lo que el cuerpo es compatible con
 ese material. En cambio, las densidades del latón ($\approx 8{,}4$ a
 $8{,}7\ \mathrm{g/cm^3}$) y del bronce ($\approx 8{,}7$ a $8{,}9\ \mathrm{g/cm^3}$) quedan muy
@@ -511,20 +534,25 @@ lejos del intervalo medido (Figura~\ref{fig:densidad}), por lo que se puede desc
 cuerpo esté hecho de alguno de ellos.
 
 \paragraph{Aceleración de la gravedad.} Por el método directo se obtuvo
-$g = (9{,}59 \pm 0{,}21)\ \mathrm{m/s^2}$ (2,2\%) y por regresión lineal
+$g = (9{,}59 \pm 0{,}26)\ \mathrm{m/s^2}$ (2,7\%) y por regresión lineal
 $g = (9{,}56 \pm 0{,}17)\ \mathrm{m/s^2}$ (1,7\%). Ambos intervalos se superponen, por lo
 que las mediciones son comparables. Se elige como valor representativo el de la regresión
 lineal, $\boldsymbol{g = (9{,}56 \pm 0{,}17)\ \mathbf{m/s^2}}$, ya que usa la información de
 varias longitudes, tiene menor incerteza y es el único que cumple la cota del 2\%. Además,
 en el ajuste sin los puntos anómalos la ordenada al origen resulta compatible con cero, como
-predice el modelo, y el ajuste es casi perfecto ($R^2 = 0{,}9994$).
+predice el modelo, y el ajuste es casi perfecto ($R^2 = 0{,}9994$). Sin embargo, el
+cumplimiento de la cota debe tomarse con reservas: el ajuste se basa en solo cuatro puntos,
+tras descartar dos de los seis, y con la incerteza obtenida al propagar las barras de error
+de $T^2$ el error relativo sería cercano al 7\%.
 
 \subsection{Consecuencias de las discrepancias entre modelo y sistema}
-Con un error relativo del 25\%, el intervalo de densidad también incluye otros materiales de
+Con un error relativo del 30\%, el intervalo de densidad también incluye otros materiales de
 densidad similar (vidrio, granito, algunas cerámicas), así que la medición no alcanza para
-identificar el material de forma unívoca. En el péndulo, los valores de $g$ quedan algo por
-debajo del valor de referencia en Buenos Aires ($\approx 9{,}80\ \mathrm{m/s^2}$); el
-intervalo del método directo lo alcanza en su extremo superior. Por otro lado, al incluir los
+identificar el material de forma unívoca. En el péndulo, los valores de $g$ quedan por
+debajo del valor de referencia en Buenos Aires ($\approx 9{,}80\ \mathrm{m/s^2}$). El
+intervalo del método directo, $[9{,}33\,;\,9{,}85]\ \mathrm{m/s^2}$, lo contiene, pero el de
+la regresión, $[9{,}39\,;\,9{,}73]\ \mathrm{m/s^2}$, no: la diferencia supera la incerteza
+estimada, lo que indica un error sistemático no contemplado. Por otro lado, al incluir los
 dos puntos anómalos en el ajuste, la recta se inclina, la ordenada al origen se aleja de cero
 y $g$ resulta muy por encima del valor esperado, con un error del 6,6\%.
 
@@ -540,27 +568,28 @@ mediciones directas (Tabla~\ref{tab:errores}).
 \begin{tabular}{llccc}
   \toprule
   \hdr{Magnitud} & \hdr{Instrumento} & \hdr{Valor típico} & \hdr{Incerteza} & \hdr{Error relativo} \\ \midrule
-  Masa $m$      & Balanza    & 45,71 g  & 0,01 g  & 0,02 \% \\
-  Volumen $V$   & Probeta    & 16,75 ml & 4,1 ml  & 25 \%   \\
+  Masa $m$      & Balanza    & 45,71 g  & 0,015 g & 0,03 \% \\
+  Volumen $V$   & Probeta    & 16,75 ml & 5 ml    & 30 \%   \\
   Longitud $L$  & Regla      & 96,5 cm  & 0,1 cm  & 0,1 \%  \\
-  Período $T$   & Cronómetro & 1,99 s   & 0,02 s  & 1,1 \%  \\
+  Período $T$   & Cronómetro & 1,993 s  & 0,026 s & 1,3 \%  \\
   \bottomrule
 \end{tabular}
 \end{table}
 
 En la densidad, el error de la masa es despreciable frente al del volumen: prácticamente toda
-la incerteza de $\delta$ proviene de la probeta, cuya incerteza de 4~ml es comparable al
+la incerteza de $\delta$ proviene de la probeta, cuya incerteza de 5~ml es comparable al
 volumen medido ($\approx 17$~ml). En el péndulo, el término dominante es el del período, que
 además entra multiplicado por 2 en la expresión de $\Delta g/g$; el aporte de la longitud es
-unas veinte veces menor.
+más de veinte veces menor.
 
 La diferencia sistemática con el valor de referencia de $g$ puede deberse a que el modelo de
 péndulo ideal supone una masa puntual, amplitudes pequeñas y rozamiento nulo, y a que la
 longitud debe medirse hasta el centro de la esfera, lo cual no es sencillo con una regla.
 También influye el tiempo de reacción al iniciar y detener el cronómetro, que no es igual en
-cada medición: la dispersión entre las tres repeticiones del tiempo (hasta 1~s para
-$L = 88$~cm) fue mayor que la incerteza instrumental adoptada, lo que muestra que el tiempo
-de reacción real fue mayor a 0,2~s en algunas mediciones. Los valores anómalos de 43~cm y
+cada medición: para tres de las seis longitudes la dispersión entre las tres repeticiones
+(hasta 1~s para $L = 88$~cm) superó la incerteza instrumental de 0,21~s, lo que muestra que
+el tiempo de reacción real fue mayor a 0,2~s en algunas mediciones; en esos casos se adoptó
+la incerteza obtenida de la dispersión. Los valores anómalos de 43~cm y
 87~cm se atribuyen a errores groseros, probablemente en el registro de la longitud o en el
 conteo de oscilaciones.
 
@@ -570,8 +599,9 @@ medición, y las longitudes de 43~cm y 87~cm se excluyeron del ajuste final. Par
 resultado de la densidad convendría usar una probeta de menor diámetro y mayor resolución, un
 cuerpo más voluminoso, o calcular el volumen geométricamente midiendo sus dimensiones con
 calibre, lo que reduciría la incerteza del volumen varias veces. Para que el método directo
-del péndulo cumpla la cota del 2\% con holgura habría que medir al menos unas 15 a 20
-oscilaciones, de modo que $2\Delta T/T$ quede por debajo del 1,5\%. Se propone además hacer
+del péndulo cumpla la cota del 2\% con holgura habría que medir al menos unas 20
+oscilaciones: con $\Delta t \approx 0{,}26$~s y $L = 96{,}5$~cm, $2\Delta T/T$ bajaría a
+alrededor del 1,3\%. Se propone además hacer
 más repeticiones por longitud, anotar los datos por duplicado para evitar errores de registro,
 y usar un sensor o un video para medir el tiempo en lugar del cronómetro manual.
 
@@ -676,19 +706,16 @@ La incerteza instrumental del volumen surge de propagar las incertezas de las do
                          + \left|\frac{\partial V}{\partial X_2}\right| \Delta X_2
                          = \Delta X_1 + \Delta X_2 = 4\ \mathrm{ml}
 \]
-La dispersión de las cuatro tomas aporta una incerteza estadística, y ambas se combinan en
-cuadratura:
+Esta es la apreciación con la que se obtiene cada valor de $V$. Aplicando la expresión para
+mediciones repetidas a las cuatro tomas, con $V_M = 18$~ml y $V_m = 16$~ml:
 \[
-  \sigma_{\text{est}} = \frac{V_{\text{max}} - V_{\text{min}}}{2}, \qquad
-  \Delta V = \sqrt{\sigma_{\text{est}}^2 + \sigma_{\text{no est}}^2}
-\]
-Con $V_{\text{max}} = 18$~ml y $V_{\text{min}} = 16$~ml resulta $\sigma_{\text{est}} = 1$~ml, y con
-$\sigma_{\text{no est}} = 4$~ml:
-\[
-  \Delta V = \sqrt{1^2 + 4^2}\ \mathrm{ml} \approx 4{,}1\ \mathrm{ml}
+  \Delta V = \frac{(V_M + 4\ \mathrm{ml}) - (V_m - 4\ \mathrm{ml})}{2}
+           = \frac{22\ \mathrm{ml} - 12\ \mathrm{ml}}{2} = 5\ \mathrm{ml}
   \quad\Rightarrow\quad
-  V = (17 \pm 4)\ \mathrm{ml}
+  V = (17 \pm 5)\ \mathrm{ml}
 \]
+Del mismo modo, para la masa:
+$\Delta m = [(45{,}71 + 0{,}01) - (45{,}70 - 0{,}01)]/2\ \mathrm{g} = 0{,}015\ \mathrm{g}$.
 
 \subsubsection{Densidad}
 Aplicando la definición y propagando incertezas con derivadas parciales
@@ -699,35 +726,49 @@ Aplicando la definición y propagando incertezas con derivadas parciales
                = \frac{1}{V}\,\Delta m + \frac{m}{V^2}\,\Delta V
 \]
 \[
-  \delta = \frac{45{,}71\ \mathrm{g}}{16{,}75\ \mathrm{cm^3}} = 2{,}729\ \frac{\mathrm{g}}{\mathrm{cm^3}}
+  \delta = \frac{45{,}705\ \mathrm{g}}{16{,}75\ \mathrm{cm^3}} = 2{,}729\ \frac{\mathrm{g}}{\mathrm{cm^3}}
 \]
 \[
-  \Delta\delta = \frac{0{,}01\ \mathrm{g}}{16{,}75\ \mathrm{cm^3}}
-               + \frac{45{,}71\ \mathrm{g}}{\left(16{,}75\ \mathrm{cm^3}\right)^2} \cdot 4{,}1\ \mathrm{cm^3}
-               = 0{,}0006 + 0{,}67 \approx 0{,}7\ \frac{\mathrm{g}}{\mathrm{cm^3}}
+  \Delta\delta = \frac{0{,}015\ \mathrm{g}}{16{,}75\ \mathrm{cm^3}}
+               + \frac{45{,}705\ \mathrm{g}}{\left(16{,}75\ \mathrm{cm^3}\right)^2} \cdot 5\ \mathrm{cm^3}
+               = 0{,}0009 + 0{,}81 \approx 0{,}8\ \frac{\mathrm{g}}{\mathrm{cm^3}}
 \]
 Expresando la incerteza con una cifra significativa:
-$\delta = (2{,}7 \pm 0{,}7)\ \mathrm{g/cm^3}$, con
-$\varepsilon_\delta = 0{,}67 / 2{,}73 \approx 25\%$.
+$\delta = (2{,}7 \pm 0{,}8)\ \mathrm{g/cm^3}$, con
+$\varepsilon_\delta = 0{,}815 / 2{,}729 \approx 30\%$.
 
 \subsubsection{Aceleración de la gravedad por método directo}
-La incerteza del tiempo combina la resolución del cronómetro y el tiempo de reacción:
+La incerteza instrumental del tiempo suma la resolución del cronómetro y el tiempo de
+reacción, y se compara con la que surge de la dispersión de las tres repeticiones,
+adoptándose la mayor:
 \[
-  \Delta t = 0{,}01\ \mathrm{s} + 0{,}2\ \mathrm{s} \approx 0{,}21\ \mathrm{s}
-  \quad\Rightarrow\quad
-  \Delta T = \frac{0{,}21\ \mathrm{s}}{10} \approx 0{,}021\ \mathrm{s},
+  \Delta t_{\text{inst}} = 0{,}01\ \mathrm{s} + 0{,}2\ \mathrm{s} = 0{,}21\ \mathrm{s},
+  \qquad
+  \Delta t_{\text{disp}} = \frac{(t_M + 0{,}01\ \mathrm{s}) - (t_m - 0{,}01\ \mathrm{s})}{2},
+  \qquad
+  \Delta t = \max(\Delta t_{\text{inst}}, \Delta t_{\text{disp}})
+\]
+\[
+  \Delta T = \frac{\Delta t}{10},
   \qquad
   \Delta (T^2) = 2\,T\,\Delta T
 \]
-Para la longitud más larga, $L = 96{,}5$~cm ($t_{\text{prom}} = 19{,}93$~s, $T = 1{,}993$~s):
+Para la longitud más larga, $L = 96{,}5$~cm ($t_M = 20{,}10$~s, $t_m = 19{,}60$~s,
+$t_{\text{prom}} = 19{,}93$~s, $T = 1{,}993$~s):
+\[
+  \Delta t_{\text{disp}} = \frac{20{,}11\ \mathrm{s} - 19{,}59\ \mathrm{s}}{2} = 0{,}26\ \mathrm{s}
+  > \Delta t_{\text{inst}}
+  \quad\Rightarrow\quad
+  \Delta T = 0{,}026\ \mathrm{s}
+\]
 \[
   g = \frac{4\pi^2 \cdot 0{,}965\ \mathrm{m}}{(1{,}993\ \mathrm{s})^2}
       = 9{,}59\ \frac{\mathrm{m}}{\mathrm{s^2}},
   \qquad
-  \frac{\Delta g}{g} = \frac{0{,}1}{96{,}5} + 2 \cdot \frac{0{,}021}{1{,}993}
-                     = 0{,}001 + 0{,}021 = 2{,}2\%
+  \frac{\Delta g}{g} = \frac{0{,}1}{96{,}5} + 2 \cdot \frac{0{,}026}{1{,}993}
+                     = 0{,}001 + 0{,}026 = 2{,}7\%
 \]
-de donde $\Delta g = 0{,}022 \cdot 9{,}59\ \mathrm{m/s^2} \approx 0{,}21\ \mathrm{m/s^2}$. El
+de donde $\Delta g = 0{,}027 \cdot 9{,}59\ \mathrm{m/s^2} \approx 0{,}26\ \mathrm{m/s^2}$. El
 mismo procedimiento se aplicó a las demás longitudes de la Tabla~\ref{tab:pendulo}.
 
 \subsubsection{Aceleración de la gravedad por regresión lineal}
@@ -738,15 +779,29 @@ Con la pendiente del ajuste sin los puntos anómalos, $a = (4{,}13 \pm 0{,}07)\ 
   \Delta g = \left|\frac{dg}{da}\right| \Delta a = \frac{4\pi^2}{a^2}\,\Delta a
            \approx 0{,}17\ \frac{\mathrm{m}}{\mathrm{s^2}}
 \]
+Aquí $\Delta a$ es la incerteza de la pendiente por cuadrados mínimos, calculada a partir de
+los residuos:
+\[
+  \Delta a = \sqrt{\frac{\sum_i \left(T_i^2 - a L_i - b\right)^2}{(n-2)\sum_i (L_i - \bar L)^2}},
+  \qquad n = 4
+\]
+Si en cambio se ponderan los puntos con sus incertezas, $w_i = 1/\Delta(T_i^2)^2$, se obtiene
+$\Delta a = 1/\sqrt{\sum_i w_i (L_i - \bar L_w)^2} \approx 0{,}30\ \mathrm{s^2/m}$ y
+$\Delta g \approx 0{,}7\ \mathrm{m/s^2}$ (ver Sección~\ref{sec:resultados}).
 
 \subsubsection{Recorte de $\boldsymbol{\pi}$}
 Siguiendo el criterio de la guía, el error cometido al recortar $\pi$ debe ser al menos diez
 veces menor que el menor error relativo de las mediciones:
+En el cálculo de $g$ intervienen $L$ y $T$; el menor error relativo es el de la longitud,
+$\varepsilon_L = 0{,}1/96{,}5 \approx 0{,}1\%$. Como $\pi$ aparece al cuadrado, aporta
+$2\,\varepsilon_\pi$ al error relativo de $g$:
 \[
-  \varepsilon_\pi = \frac{\Delta\pi}{\pi} \leq \frac{1}{10}\,\varepsilon_g
+  2\,\varepsilon_\pi \leq \frac{1}{10}\,\varepsilon_L = 0{,}01\%
+  \quad\Rightarrow\quad
+  \varepsilon_\pi \leq 0{,}005\%
 \]
-Como $\varepsilon_g = 1{,}7\%$, alcanza con $\varepsilon_\pi \leq 0{,}17\%$. Tomando
-$\pi = 3{,}14$ el error es de 0,05\%, que ya cumple el criterio; en los cálculos se usó
-$\pi = 3{,}1416$, cuyo error es despreciable.
+Tomar $\pi = 3{,}14$ ($\varepsilon_\pi \approx 0{,}05\%$) o $\pi = 3{,}142$
+($\varepsilon_\pi \approx 0{,}013\%$) no cumpliría el criterio. En los cálculos se usó
+$\pi = 3{,}1416$, con $\varepsilon_\pi \approx 0{,}0002\%$, que sí lo cumple.
 
 \end{document}
