@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1790456110.89666 "informe.tex" "informe.pdf" "informe" 1790456112.00033 0
+["pdflatex"] 1790458140.16568 "informe.tex" "informe.pdf" "informe" 1790458141.28476 0
   "/etc/texmf/web2c/texmf.cnf" 1747964880.54124 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -228,13 +228,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1759963327.75287 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1759963359 6852455 db0ba1948cfbb9f067723b3721f84e2f ""
-  "img/fig1-densidad.png" 1790455983.70656 30063 ed60c9e827d45b107faf1bd07a26caf7 ""
-  "img/fig2-gravedad.png" 1790455983.81257 72343 9d611b489e6aeb84113e578f7167081f ""
-  "img/fig3-regresion.png" 1790455983.93258 91524 5f8e0a1223f31586af6605f1cc311fb4 ""
+  "img/fig1-densidad.png" 1790458131.79672 30063 ed60c9e827d45b107faf1bd07a26caf7 ""
+  "img/fig2-gravedad.png" 1790458131.90072 69168 925de027906a5ddf7319dc6cbb86ba35 ""
+  "img/fig3-regresion.png" 1790458132.02073 89884 3b4106878329b97acf407ba3111d8f38 ""
   "img/logo-fiuba.jpg" 1790384887.79862 10779 6ec23255f58aa4af341decd25e958fc5 ""
-  "informe.aux" 1790456111.87504 8518 90d081ed94a15d774b01b0282e02dfb5 "pdflatex"
-  "informe.out" 1790456111.87604 5324 61df4d4a960e44713046bf04fe195e5a "pdflatex"
-  "informe.tex" 1790456095.46409 37990 a1c88f724fbcd7d015f4f24ad5d393c2 ""
+  "informe.aux" 1790458141.15928 8518 90d081ed94a15d774b01b0282e02dfb5 "pdflatex"
+  "informe.out" 1790458141.16028 5324 61df4d4a960e44713046bf04fe195e5a "pdflatex"
+  "informe.tex" 1790458114.59569 38813 dfcc279cbbabe47f29f13492191d392c ""
   (generated)
   "informe.aux"
   "informe.log"

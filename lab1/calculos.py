@@ -6,6 +6,8 @@ Criterio de incertezas (igual en todo el informe):
     (p. ej. el tiempo de reacción) es mayor, se adopta esa.
   * Magnitudes indirectas: propagación lineal con derivadas parciales.
 """
+from decimal import Decimal, ROUND_HALF_UP
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -22,6 +24,17 @@ plt.rcParams.update({
 
 def coma(x, nd):
     return f"{x:.{nd}f}".replace(".", ",")
+
+
+def redondear(x, e):
+    """Incerteza con 1 cifra significativa y valor a la misma posición decimal."""
+    exp = Decimal(str(float(e))).quantize(Decimal("1e-12")).normalize().adjusted()
+    E = Decimal(str(float(e))).quantize(Decimal(1).scaleb(exp), ROUND_HALF_UP)
+    if E.adjusted() > exp:           # p. ej. 0,096 -> 0,1
+        exp += 1
+        E = E.quantize(Decimal(1).scaleb(exp), ROUND_HALF_UP)
+    X = Decimal(str(float(x))).quantize(Decimal(1).scaleb(exp), ROUND_HALF_UP)
+    return str(X).replace(".", ","), str(E).replace(".", ",")
 
 
 def dispersion(x, apreciacion):
@@ -105,8 +118,8 @@ for y, (v, e) in enumerate(valores):
     color = NARANJA if descartado else AZUL
     ax.errorbar(v, y, xerr=e, fmt="o", color=color, mfc="white" if descartado else color,
                 mew=1.8, capsize=4, ms=7, lw=1.5)
-    nd = 1 if e >= 0.3 else 2          # 1 cifra significativa salvo si empieza en 1 o 2
-    ax.text(v + e + 0.05, y, f"{coma(v, nd)} ± {coma(e, nd)}", va="center", fontsize=9,
+    vr, er = redondear(v, e)
+    ax.text(v + e + 0.05, y, f"{vr} ± {er}", va="center", fontsize=9,
             color="#333333")
 ax.axvline(9.80, color="#888888", ls="--", lw=1.2)
 ax.text(9.80, -1.05, "g de referencia\n(Buenos Aires) ≈ 9,80", ha="center", va="center", fontsize=9,
@@ -121,12 +134,12 @@ fig.savefig("img/fig2-gravedad.png")
 
 fig, ax = plt.subplots(figsize=(6.4, 4.1), dpi=200)
 xs = np.linspace(0.38, 1.02, 2)
-a6, _, b6, _, _ = fits["todos"]
-a4, _, b4, _, _ = fits["sin"]
+a6, da6, b6, db6, _ = fits["todos"]
+a4, da4, b4, db4, _ = fits["sin"]
 ax.plot(xs, a6 * xs + b6, "--", color=GRIS, lw=1.5,
-        label=f"Ajuste con todos los puntos: T² = {coma(a6, 2)}·L + {coma(b6, 2)}")
+        label=f"Ajuste con todos los puntos: T² = {redondear(a6, da6)[0]}·L + {redondear(b6, db6)[0]}")
 ax.plot(xs, a4 * xs + b4, color=AZUL, lw=2,
-        label=f"Ajuste sin puntos descartados: T² = {coma(a4, 2)}·L + {coma(b4, 3)}")
+        label=f"Ajuste sin puntos descartados: T² = {redondear(a4, da4)[0]}·L + {redondear(b4, db4)[0]}")
 ax.errorbar(L[usados], T2[usados], yerr=dT2[usados], fmt="o", color=AZUL, mec="white",
             capsize=3, ms=6, label="Mediciones utilizadas")
 ax.errorbar(L[~usados], T2[~usados], yerr=dT2[~usados], fmt="o", color=NARANJA, mfc="white",
